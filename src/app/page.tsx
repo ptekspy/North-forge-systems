@@ -13,12 +13,30 @@ const painPoints = [
 ];
 
 const improvedWorkflows = [
-  "Quote-to-job tracking from first enquiry through production handover",
-  "Production status dashboards for live WIP and overdue visibility",
-  "Reporting and admin automation for recurring updates and exports",
-  "Stock and reorder visibility for purchasing and planning",
-  "Approvals and internal handoffs across ops, production, and commercial",
-  "Customer order and status visibility for clearer communication",
+  {
+    title: "Quote-to-job tracking",
+    detail: "Track jobs from initial enquiry through quote approval, planning, and production handover without spreadsheet chasing.",
+  },
+  {
+    title: "Production status dashboards",
+    detail: "Give planners and team leads a live view of WIP, blocked jobs, and overdue work across the shop floor.",
+  },
+  {
+    title: "Reporting and admin automation",
+    detail: "Automate recurring operational reports and admin updates so teams spend less time compiling and rekeying data.",
+  },
+  {
+    title: "Stock and reorder visibility",
+    detail: "Surface low-stock risk and reorder needs earlier so purchasing decisions are based on current operational demand.",
+  },
+  {
+    title: "Approvals and internal handoffs",
+    detail: "Replace inbox bottlenecks with clear approval flows between commercial, operations, and production teams.",
+  },
+  {
+    title: "Customer order and status visibility",
+    detail: "Provide clear order status updates so account and customer teams can communicate confidently and consistently.",
+  },
 ];
 
 const trustPoints = [
@@ -55,12 +73,13 @@ export default function HomePage() {
       <SectionWrapper>
         <h2 className="text-4xl">Typical workflows we improve</h2>
         <p className="mt-4 max-w-3xl text-[var(--color-muted)]">
-          We focus on workflow systems that remove day-to-day friction and give teams clearer operational control.
+          These are the types of day-to-day operational workflows we are typically asked to fix for manufacturing teams.
         </p>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {improvedWorkflows.map((workflow) => (
-            <li key={workflow} className="rounded-lg border border-slate-200 bg-white p-4 text-[var(--color-muted)]">
-              {workflow}
+            <li key={workflow.title} className="rounded-lg border border-slate-200 bg-white p-5">
+              <h3 className="font-heading text-xl text-[var(--color-primary)]">{workflow.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[var(--color-muted)]">{workflow.detail}</p>
             </li>
           ))}
         </ul>
