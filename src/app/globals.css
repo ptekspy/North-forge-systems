@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #233648;
+  --color-muted: #707070;
+  --color-accent: #f8a018;
+  --color-accent-strong: #f08020;
+  --color-bg: #fefefe;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.font-heading {
+  font-family: var(--font-league-spartan), Arial, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-league-spartan), Arial, sans-serif;
+}
+
+p,
+a,
+li,
+button,
+input,
+textarea,
+label {
+  font-family: var(--font-inter), Arial, sans-serif;
+}
