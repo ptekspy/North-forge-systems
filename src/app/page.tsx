@@ -12,6 +12,22 @@ const painPoints = [
   "Workflow bottlenecks that slow delivery",
 ];
 
+const improvedWorkflows = [
+  "Quote-to-job tracking from first enquiry through production handover",
+  "Production status dashboards for live WIP and overdue visibility",
+  "Reporting and admin automation for recurring updates and exports",
+  "Stock and reorder visibility for purchasing and planning",
+  "Approvals and internal handoffs across ops, production, and commercial",
+  "Customer order and status visibility for clearer communication",
+];
+
+const trustPoints = [
+  "Founder-led delivery from Patrick Kenneally, Senior Software Engineer",
+  "Based in Bradford, West Yorkshire",
+  "Focused on software and automation for manufacturing SMEs",
+  "Practical fixed-scope delivery with direct communication",
+];
+
 export default function HomePage() {
   return (
     <>
@@ -37,6 +53,20 @@ export default function HomePage() {
       </SectionWrapper>
 
       <SectionWrapper>
+        <h2 className="text-4xl">Typical workflows we improve</h2>
+        <p className="mt-4 max-w-3xl text-[var(--color-muted)]">
+          We focus on workflow systems that remove day-to-day friction and give teams clearer operational control.
+        </p>
+        <ul className="mt-8 grid gap-4 md:grid-cols-2">
+          {improvedWorkflows.map((workflow) => (
+            <li key={workflow} className="rounded-lg border border-slate-200 bg-white p-4 text-[var(--color-muted)]">
+              {workflow}
+            </li>
+          ))}
+        </ul>
+      </SectionWrapper>
+
+      <SectionWrapper>
         <h2 className="text-4xl">Services built for real manufacturing workflows</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           <Card title="Workflow Automation"><p>Simplify approvals, quoting, and repetitive admin steps so work keeps moving.</p></Card>
@@ -46,18 +76,27 @@ export default function HomePage() {
       </SectionWrapper>
 
       <SectionWrapper className="bg-slate-50">
-        <h2 className="text-4xl">Offer Spotlight: Manufacturing Workflow Sprint</h2>
-        <p className="mt-4 max-w-3xl text-[var(--color-muted)]">
-          A fixed-scope project to replace one messy spreadsheet, email, or admin-heavy workflow with a practical internal software solution.
-        </p>
-        <div className="mt-6"><Button href="/workflow-sprint" variant="primary">See the Workflow Sprint</Button></div>
-      </SectionWrapper>
-
-      <SectionWrapper>
-        <h2 className="text-4xl">Why NorthForge</h2>
+        <h2 className="text-4xl">Built for practical delivery</h2>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <Card title="Practical and systems-focused"><p>We build around real operational workflows, not abstract strategy slides.</p></Card>
-          <Card title="Senior-led and direct"><p>You work with experienced engineers who move fast and keep delivery grounded.</p></Card>
+          <Card title="A grounded partner for manufacturers">
+            <ul className="space-y-2">
+              {trustPoints.map((point) => (
+                <li key={point} className="flex gap-2">
+                  <span aria-hidden>•</span>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </Card>
+          <Card title="Start with a clear first step">
+            <p>
+              Most new engagements begin with our Manufacturing Workflow Sprint: one focused project to replace one bottleneck quickly.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-3">
+              <Button href="/workflow-sprint" variant="primary">See the Workflow Sprint</Button>
+              <Button href={siteConfig.calendlyUrl} variant="ghost">Book a Discovery Call</Button>
+            </div>
+          </Card>
         </div>
       </SectionWrapper>
 

@@ -14,12 +14,19 @@ export const metadata: Metadata = {
 };
 
 const useCases = [
-  "Quote-to-job tracking",
-  "Production status tracking",
-  "Admin automation",
-  "Reporting automation",
-  "Stock visibility tools",
-  "Order and customer update workflows",
+  "Quote-to-job tracking from enquiry to shop floor",
+  "Production status dashboards with WIP and delay visibility",
+  "Reporting and admin automation for recurring operational updates",
+  "Stock and reorder visibility tools for purchasing",
+  "Order handoffs between commercial, operations, and production",
+  "Customer order status visibility and communication workflows",
+];
+
+const sprintDeliverables = [
+  "One clearly scoped workflow solution",
+  "Practical internal software or automation",
+  "Implementation guidance and handover notes",
+  "Prioritised next-step recommendations",
 ];
 
 export default function WorkflowSprintPage() {
@@ -33,12 +40,16 @@ export default function WorkflowSprintPage() {
       </PageHero>
       <SectionWrapper>
         <div className="grid gap-4 md:grid-cols-2">
-          <Card title="What it is"><p>One clearly scoped workflow solution delivered quickly and pragmatically.</p></Card>
-          <Card title="Who it is for"><p>Manufacturing businesses held together by spreadsheets, manual updates, and disconnected tools.</p></Card>
+          <Card title="What it is">
+            <p>One focused, commercially scoped project delivered with clear outcomes and direct communication.</p>
+          </Card>
+          <Card title="Who it is for">
+            <p>Manufacturing teams running critical workflows through spreadsheets, manual updates, and disconnected tools.</p>
+          </Card>
         </div>
       </SectionWrapper>
       <SectionWrapper className="bg-slate-50">
-        <h2 className="text-4xl">Common use cases</h2>
+        <h2 className="text-4xl">Typical sprint use cases</h2>
         <ul className="mt-6 grid gap-3 md:grid-cols-2">
           {useCases.map((useCase) => (
             <li key={useCase} className="rounded-lg border border-slate-200 bg-white p-4 text-[var(--color-muted)]">{useCase}</li>
@@ -47,17 +58,22 @@ export default function WorkflowSprintPage() {
       </SectionWrapper>
       <SectionWrapper>
         <h2 className="text-4xl">Delivery process</h2>
-        <p className="mt-3 max-w-2xl text-[var(--color-muted)]">Simple three-step delivery keeps momentum high and outcomes clear.</p>
+        <p className="mt-3 max-w-2xl text-[var(--color-muted)]">A simple three-step process keeps momentum high and outcomes clear.</p>
         <div className="mt-8"><ProcessSteps /></div>
       </SectionWrapper>
       <SectionWrapper className="bg-slate-50">
-        <h2 className="text-4xl">What clients get</h2>
-        <ul className="mt-6 space-y-2 text-[var(--color-muted)]">
-          <li>• One clearly scoped workflow solution</li>
-          <li>• Practical internal software or automation</li>
-          <li>• Documentation and handover</li>
-          <li>• Clear next steps for future improvements</li>
+        <h2 className="text-4xl">What you get</h2>
+        <ul className="mt-6 space-y-3 text-[var(--color-muted)]">
+          {sprintDeliverables.map((deliverable) => (
+            <li key={deliverable} className="flex gap-2">
+              <span aria-hidden>•</span>
+              <span>{deliverable}</span>
+            </li>
+          ))}
         </ul>
+        <div className="mt-8">
+          <Button href={siteConfig.calendlyUrl} variant="secondary">Book a Discovery Call</Button>
+        </div>
       </SectionWrapper>
       <BookingCtaBand />
     </>
