@@ -10,8 +10,9 @@ export function Footer() {
         <div>
           <Image src="/logos/northforge-logo-dark.svg" alt="NorthForge Systems inverted logo" width={170} height={44} />
           <p className="mt-4 text-sm text-slate-300">
-            Practical software and automation systems for manufacturing SMEs.
+            Founder-led software and automation for manufacturing SMEs.
           </p>
+          <p className="mt-2 text-sm text-slate-300">Bradford, West Yorkshire</p>
         </div>
         <div>
           <h2 className="font-heading text-xl">Navigation</h2>
@@ -23,6 +24,11 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/privacy" className="hover:text-white">
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
@@ -39,7 +45,9 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <span>Privacy Policy (coming soon)</span>
+              <Link href="/workflow-sprint" className="hover:text-white">
+                Manufacturing Workflow Sprint
+              </Link>
             </li>
           </ul>
         </div>
