@@ -4,6 +4,8 @@ import { navLinks } from "@/content/navigation";
 import { siteConfig } from "@/lib/site";
 
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-[var(--color-primary)] px-6 py-14 text-slate-100 md:px-10">
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
@@ -51,6 +53,9 @@ export function Footer() {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="mx-auto mt-10 max-w-6xl border-t border-slate-600 pt-5 text-xs text-slate-300">
+        © {year} NorthForge Systems. Practical software and automation for manufacturing operations.
       </div>
     </footer>
   );

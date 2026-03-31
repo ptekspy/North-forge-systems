@@ -63,12 +63,9 @@ export default function WorkflowSprintPage() {
       </SectionWrapper>
       <SectionWrapper className="bg-slate-50">
         <h2 className="text-4xl">What you get</h2>
-        <ul className="mt-6 space-y-3 text-[var(--color-muted)]">
+        <ul className="mt-6 list-disc space-y-3 pl-5 text-[var(--color-muted)] marker:text-[var(--color-accent-strong)]">
           {sprintDeliverables.map((deliverable) => (
-            <li key={deliverable} className="flex gap-2">
-              <span aria-hidden>•</span>
-              <span>{deliverable}</span>
-            </li>
+            <li key={deliverable}>{deliverable}</li>
           ))}
         </ul>
         <div className="mt-8">
