@@ -49,23 +49,31 @@ export default function WorkflowSprintPage() {
         </div>
       </SectionWrapper>
       <SectionWrapper className="bg-slate-50">
-        <h2 className="text-4xl">Typical sprint use cases</h2>
+        <h2 className="text-4xl md:text-5xl">Typical sprint use cases</h2>
         <ul className="mt-6 grid gap-3 md:grid-cols-2">
           {useCases.map((useCase) => (
-            <li key={useCase} className="rounded-lg border border-slate-200 bg-white p-4 text-[var(--color-muted)]">{useCase}</li>
+            <li key={useCase} className="rounded-2xl border border-slate-200 bg-white p-4 text-[15px] leading-7 text-[var(--color-primary)] shadow-sm">
+              {useCase}
+            </li>
           ))}
         </ul>
       </SectionWrapper>
       <SectionWrapper>
-        <h2 className="text-4xl">Delivery process</h2>
-        <p className="mt-3 max-w-2xl text-[var(--color-muted)]">A simple three-step process keeps momentum high and outcomes clear.</p>
+        <h2 className="text-4xl md:text-5xl">Delivery process</h2>
+        <p className="mt-3 max-w-2xl text-lg leading-8 text-[var(--color-muted)]">A simple three-step process keeps momentum high and outcomes clear.</p>
         <div className="mt-8"><ProcessSteps /></div>
       </SectionWrapper>
       <SectionWrapper className="bg-slate-50">
-        <h2 className="text-4xl">What you get</h2>
-        <ul className="mt-6 list-disc space-y-3 pl-5 text-[var(--color-muted)] marker:text-[var(--color-accent-strong)]">
+        <h2 className="text-4xl md:text-5xl">What you get</h2>
+        <p className="mt-3 max-w-3xl text-lg leading-8 text-[var(--color-muted)]">
+          A Workflow Sprint is designed to leave you with a usable improvement, a clear handover, and a practical next step.
+        </p>
+        <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {sprintDeliverables.map((deliverable) => (
-            <li key={deliverable}>{deliverable}</li>
+            <li key={deliverable} className="flex gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <span aria-hidden className="mt-2 h-2.5 w-2.5 rounded-full bg-[var(--color-accent)]" />
+              <span className="text-[15px] leading-7 text-[var(--color-primary)]">{deliverable}</span>
+            </li>
           ))}
         </ul>
         <div className="mt-8">

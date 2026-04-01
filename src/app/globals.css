@@ -9,8 +9,10 @@
 }
 
 body {
+  min-height: 100vh;
   background: var(--color-bg);
   color: var(--color-primary);
+  line-height: 1.5;
 }
 
 .font-heading {
@@ -26,6 +28,9 @@ h2,
 h3,
 h4 {
   font-family: var(--font-league-spartan), Arial, sans-serif;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  text-wrap: balance;
 }
 
 p,
@@ -36,4 +41,13 @@ input,
 textarea,
 label {
   font-family: var(--font-inter), Arial, sans-serif;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: rgb(248 160 24 / 22%);
+  color: var(--color-primary);
 }

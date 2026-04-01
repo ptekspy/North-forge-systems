@@ -26,11 +26,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/logos/northforge-systems-logo-icon.png",
+    shortcut: "/logos/northforge-systems-logo-icon.png",
+    apple: "/logos/northforge-systems-logo-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="North Forge" />
+      </head>
       <body className={`${inter.variable} ${leagueSpartan.variable} font-body antialiased`}>
         <Navbar />
         <main>{children}</main>
