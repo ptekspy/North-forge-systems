@@ -26,6 +26,12 @@ export default function ServicesPage() {
             NorthForge solves workflow problems with a sensible mix of software, automation, dashboards, integrations, and selective AI where it genuinely improves process clarity or reduces manual handling.
           </p>
         </div>
+        <div className="mt-6 max-w-4xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">A practical AI example</p>
+          <p className="mt-3 text-[15px] leading-7 text-[var(--color-muted)]">
+            In the right workflow, that might mean using AI to review incoming emails, PDF order documents, or enquiry notes, pull out the key details, and route them into the right internal queue for quoting or follow-up with human oversight still in place.
+          </p>
+        </div>
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           <Card title="Workflow Automation">
             <p><strong>Focus:</strong> Simplifying repetitive steps, approvals, and handoffs.</p>

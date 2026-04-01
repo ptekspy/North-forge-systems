@@ -65,6 +65,12 @@ export default function HomePage() {
           <li className="rounded-full border border-slate-200 bg-white px-4 py-2">Bradford, West Yorkshire</li>
           <li className="rounded-full border border-slate-200 bg-white px-4 py-2">Built for manufacturing SMEs</li>
         </ul>
+        <div className="mt-8 max-w-3xl rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">Why NorthForge exists</p>
+          <p className="mt-3 text-[15px] leading-7 text-[var(--color-muted)]">
+            NorthForge was built around a simple idea: many manufacturing businesses do not need a big consultancy programme, they need a founder who can understand a messy workflow, design a better system, and deliver it cleanly from start to finish.
+          </p>
+        </div>
       </SectionWrapper>
 
       <SectionWrapper className="bg-slate-50">
