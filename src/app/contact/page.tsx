@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Book a discovery call with NorthForge Systems to discuss workflow automation and internal tools.",
+  description: "Book a discovery call to discuss manufacturing workflow problems, internal tools, automation, dashboards, integrations, and selective AI-assisted improvements.",
   alternates: { canonical: "/contact" },
 };
 

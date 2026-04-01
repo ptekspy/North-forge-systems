@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Workflow automation, internal tools, and reporting systems for manufacturing SMEs.",
+  description: "Workflow automation, internal tools, dashboards, integrations, and selective AI-assisted systems for manufacturing SMEs.",
   alternates: { canonical: "/services" },
 };
 

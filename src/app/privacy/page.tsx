@@ -38,7 +38,7 @@ export default function PrivacyPage() {
             <section className="space-y-3">
               <h2 className="text-3xl text-[var(--color-primary)]">What we collect</h2>
               <ul className="list-disc space-y-2 pl-5 marker:text-[var(--color-accent-strong)]">
-                <li>Contact details and enquiry information you submit by email or contact forms.</li>
+                <li>Contact details and enquiry information you submit by email.</li>
                 <li>Booking details you provide when scheduling a discovery call through Calendly.</li>
                 <li>Basic technical data such as browser and page access logs collected by hosting infrastructure.</li>
               </ul>
