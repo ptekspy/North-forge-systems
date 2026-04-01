@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, League_Spartan } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
@@ -40,6 +41,23 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <meta name="apple-mobile-web-app-title" content="North Forge" />
       </head>
       <body className={`${inter.variable} ${leagueSpartan.variable} font-body antialiased`}>
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="1e54cbb2-4015-4544-816a-196632e438df"
+          strategy="beforeInteractive"
+        />
+        <Script
+          id="google-tag-manager"
+          src="https://www.googletagmanager.com/gtag/js?id=G-X9H43Q8VC0"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-X9H43Q8VC0');`}
+        </Script>
         <Navbar />
         <main>{children}</main>
         <Footer />
