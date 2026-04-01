@@ -17,16 +17,16 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About NorthForge Systems"
-        summary="NorthForge is a founder-led software company that builds practical internal software and automation for manufacturing SMEs."
+        summary="NorthForge is a founder-led software company that builds practical internal tools, automation, and operational systems for manufacturing SMEs."
       />
       <SectionWrapper>
         <div className="grid gap-4 md:grid-cols-2">
-          <Card title="Founder-led and practical">
+          <Card title="Founder-led systems building">
             <p>
-              NorthForge Systems is led by Patrick Kenneally, a Senior Software Engineer focused on designing useful systems for real operational teams.
+              NorthForge Systems is led by Patrick Kenneally, a founder and systems builder with deep hands-on experience delivering software, internal tools, automation, and operational systems.
             </p>
             <p>
-              The emphasis is straightforward: understand how work actually moves through a business, remove bottlenecks, and ship software that people use.
+              The emphasis is straightforward: understand how work actually moves through a business, where friction and admin build up, and deliver better systems end to end.
             </p>
           </Card>
           <Card title="Built for manufacturing SMEs">
@@ -34,7 +34,7 @@ export default function AboutPage() {
               We work with manufacturing businesses where spreadsheets, inboxes, and manual admin have become the default operating system.
             </p>
             <p>
-              Our job is to replace that fragility with practical workflow tools, dashboards, and automation that improve control without adding complexity.
+              Based in Bradford, West Yorkshire, NorthForge is grounded in a region full of practical manufacturing businesses that need better workflow tools, stronger reporting, and clearer operational systems without unnecessary complexity.
             </p>
           </Card>
         </div>
@@ -48,7 +48,10 @@ export default function AboutPage() {
                 We keep delivery direct and commercial: clear scope, clear communication, and systems built around your day-to-day operations.
               </p>
               <p>
-                NorthForge is not a branding exercise or innovation theatre. We focus on software that removes delays, improves visibility, and reduces admin load where it matters.
+                The work is not about technology for its own sake. It is about improving process clarity, reducing admin, strengthening reporting, and building practical systems that real teams can use day to day.
+              </p>
+              <p>
+                Where it makes sense, that can also include practical AI integrations, AI-assisted workflows, or agent-supported tools. But the starting point is always the workflow problem, not the hype.
               </p>
               <p>
                 If you want practical modernisation without fluff, book a discovery call and we will identify the highest-value workflow to improve first.
@@ -65,6 +68,10 @@ export default function AboutPage() {
               <li className="flex gap-3">
                 <span aria-hidden className="mt-2 h-2 w-2 rounded-full bg-[var(--color-accent)]" />
                 <span>Focused on operational systems that support real manufacturing teams.</span>
+              </li>
+              <li className="flex gap-3">
+                <span aria-hidden className="mt-2 h-2 w-2 rounded-full bg-[var(--color-accent)]" />
+                <span>Combines hands-on software delivery with workflow and operational systems thinking.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden className="mt-2 h-2 w-2 rounded-full bg-[var(--color-accent)]" />

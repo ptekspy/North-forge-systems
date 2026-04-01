@@ -23,7 +23,7 @@ export default function ContactPage() {
       </PageHero>
       <SectionWrapper>
         <p className="max-w-2xl text-lg leading-8 text-[var(--color-muted)]">
-          The clearest next step is usually a short discovery call. If you would rather send context first, email works just as well.
+          The clearest next step is usually a short discovery call. This is most relevant for owners, operations managers, production managers, commercial leads, and admin teams dealing with workflow friction inside a manufacturing business.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           <Card title="Book directly via Calendly">
@@ -42,7 +42,7 @@ export default function ContactPage() {
         <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-5">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">Before we speak</p>
           <p className="mt-3 max-w-3xl text-[15px] leading-7 text-[var(--color-muted)]">
-            A brief note about the workflow, the teams involved, and where the current friction shows up is enough to make the first conversation useful.
+            A brief note about the workflow, the teams involved, and where the current friction shows up is enough to make the first conversation useful. Typical projects involve internal tools, workflow automation, dashboards, integrations, and sometimes AI-assisted workflow improvements where they genuinely reduce admin.
           </p>
         </div>
       </SectionWrapper>

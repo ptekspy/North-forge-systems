@@ -40,9 +40,10 @@ const improvedWorkflows = [
 ];
 
 const trustPoints = [
-  "Founder-led delivery from Patrick Kenneally, Senior Software Engineer",
+  "Founder-led delivery from Patrick Kenneally, founder and systems builder",
   "Based in Bradford, West Yorkshire",
   "Focused on software and automation for manufacturing SMEs",
+  "Selective AI-assisted workflows and integrations where they reduce repetitive admin",
   "Practical fixed-scope delivery with direct communication",
 ];
 
@@ -95,9 +96,9 @@ export default function HomePage() {
       <SectionWrapper>
         <h2 className="text-4xl md:text-5xl">Services built for real manufacturing workflows</h2>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          <Card title="Workflow Automation"><p>Simplify approvals, quoting, and repetitive admin steps so work keeps moving.</p></Card>
-          <Card title="Internal Tools"><p>Create quoting systems, job tracking tools, and operational portals your team will use.</p></Card>
-          <Card title="Dashboards & Reporting"><p>Get clear production and admin visibility with reporting designed for daily decisions.</p></Card>
+          <Card title="Workflow Automation"><p>Simplify approvals, quoting, repetitive admin, and AI-assisted workflow steps where they create real operational value.</p></Card>
+          <Card title="Internal Tools"><p>Create quoting systems, job tracking tools, operational portals, and selective agent-supported internal tools your team will actually use.</p></Card>
+          <Card title="Dashboards & Reporting"><p>Get clear production visibility, stronger reporting, and AI-assisted summaries where they support better daily decisions.</p></Card>
         </div>
       </SectionWrapper>
 
@@ -116,7 +117,7 @@ export default function HomePage() {
           </Card>
           <Card title="Start with a clear first step">
             <p>
-              Most new engagements begin with our Manufacturing Workflow Sprint: one focused project to replace one bottleneck quickly.
+              Most new engagements begin with our Manufacturing Workflow Sprint: one focused project to replace one bottleneck with a practical tool, dashboard, automation, integration, or selective AI-assisted process improvement.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Button href="/workflow-sprint" variant="primary">See the Workflow Sprint</Button>

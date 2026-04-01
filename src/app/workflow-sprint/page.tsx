@@ -9,7 +9,7 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Manufacturing Workflow Sprint",
-  description: "A fixed-scope engagement to solve one operational bottleneck with practical software or automation.",
+  description: "A fixed-scope engagement to solve one operational bottleneck with practical software, automation, integrations, dashboards, or selective AI-assisted workflow improvement.",
   alternates: { canonical: "/workflow-sprint" },
 };
 
@@ -24,7 +24,7 @@ const useCases = [
 
 const sprintDeliverables = [
   "One clearly scoped workflow solution",
-  "Practical internal software or automation",
+  "Practical internal software, automation, dashboard, integration, or selective AI-assisted workflow improvement",
   "Implementation guidance and handover notes",
   "Prioritised next-step recommendations",
 ];
@@ -34,17 +34,17 @@ export default function WorkflowSprintPage() {
     <>
       <PageHero
         title="Manufacturing Workflow Sprint"
-        summary="A fixed-scope project designed to replace one messy spreadsheet, inbox-driven process, or admin-heavy workflow with a practical operational system."
+        summary="A fixed-scope project designed to replace one messy spreadsheet, inbox-driven process, or admin-heavy workflow with a practical tool, dashboard, automation, integration, or selective AI-assisted operational improvement."
       >
         <Button href={siteConfig.calendlyUrl} variant="secondary">Book a Discovery Call</Button>
       </PageHero>
       <SectionWrapper>
         <div className="grid gap-4 md:grid-cols-2">
           <Card title="What it is">
-            <p>One focused, commercially scoped project delivered with clear outcomes and direct communication.</p>
+            <p>One focused, commercially scoped project delivered with clear outcomes, direct communication, and a sensible fixed scope.</p>
           </Card>
           <Card title="Who it is for">
-            <p>Manufacturing teams running critical workflows through spreadsheets, manual updates, and disconnected tools.</p>
+            <p>Manufacturing teams running critical workflows through spreadsheets, manual updates, disconnected tools, or repetitive admin that no longer scales cleanly.</p>
           </Card>
         </div>
       </SectionWrapper>
@@ -62,11 +62,17 @@ export default function WorkflowSprintPage() {
         <h2 className="text-4xl md:text-5xl">Delivery process</h2>
         <p className="mt-3 max-w-2xl text-lg leading-8 text-[var(--color-muted)]">A simple three-step process keeps momentum high and outcomes clear.</p>
         <div className="mt-8"><ProcessSteps /></div>
+        <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">Why start here</p>
+          <p className="mt-3 max-w-4xl text-[15px] leading-7 text-[var(--color-muted)]">
+            The Workflow Sprint is designed as a sensible first step: one operational problem, one clear scope, and one practical improvement without turning the first engagement into a large open-ended project.
+          </p>
+        </div>
       </SectionWrapper>
       <SectionWrapper className="bg-slate-50">
         <h2 className="text-4xl md:text-5xl">What you get</h2>
         <p className="mt-3 max-w-3xl text-lg leading-8 text-[var(--color-muted)]">
-          A Workflow Sprint is designed to leave you with a usable improvement, a clear handover, and a practical next step.
+          A Workflow Sprint is designed to leave you with a usable improvement, a clear handover, and a practical next step. Where AI is involved, it is only introduced when it supports the workflow clearly and keeps the solution grounded.
         </p>
         <ul className="mt-8 grid gap-4 md:grid-cols-2">
           {sprintDeliverables.map((deliverable) => (
