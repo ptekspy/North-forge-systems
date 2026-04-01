@@ -23,7 +23,7 @@ export default function ServicesPage() {
         <div className="max-w-4xl rounded-2xl border border-slate-200 bg-slate-50 p-6">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">Practical capability mix</p>
           <p className="mt-3 text-lg leading-8 text-[var(--color-muted)]">
-            NorthForge solves workflow problems with a sensible mix of software, automation, dashboards, integrations, and selective AI where it genuinely improves process clarity or reduces manual handling.
+            NorthForge solves workflow problems with a sensible mix of software, automation, dashboards, integrations, and selective AI where it genuinely improves process clarity or reduces manual handling. Led directly by Patrick Kenneally, the company combines direct senior involvement with the delivery mindset of a focused software team.
           </p>
         </div>
         <div className="mt-6 max-w-4xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -40,7 +40,7 @@ export default function ServicesPage() {
           </Card>
           <Card title="Internal Tools">
             <p><strong>Focus:</strong> Building internal systems around your existing process.</p>
-            <p><strong>Typical examples:</strong> quote-to-job tracking, production job boards, status portals, and selective agent-supported internal workflows.</p>
+            <p><strong>Typical examples:</strong> quote-to-job tracking, production job boards, status portals, and selective agent-supported internal workflows inside a practical company-owned system.</p>
             <p><strong>Outcome:</strong> Better consistency and fewer spreadsheet workarounds.</p>
           </Card>
           <Card title="Dashboards & Reporting">

@@ -40,11 +40,12 @@ const improvedWorkflows = [
 ];
 
 const trustPoints = [
-  "Founder-led delivery from Patrick Kenneally, founder and systems builder",
+  "Founder-led direction with direct senior involvement from Patrick Kenneally",
+  "Built to deliver with the focus and accountability of a specialist software team",
   "Based in Bradford, West Yorkshire",
   "Focused on software and automation for manufacturing SMEs",
   "Selective AI-assisted workflows and integrations where they reduce repetitive admin",
-  "Practical fixed-scope delivery with direct communication",
+  "Practical fixed-scope delivery with clear communication and handover",
 ];
 
 export default function HomePage() {
@@ -68,7 +69,7 @@ export default function HomePage() {
         <div className="mt-8 max-w-3xl rounded-2xl border border-slate-200 bg-slate-50 p-6">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">Why NorthForge exists</p>
           <p className="mt-3 text-[15px] leading-7 text-[var(--color-muted)]">
-            NorthForge was built around a simple idea: many manufacturing businesses do not need a big consultancy programme, they need a founder who can understand a messy workflow, design a better system, and deliver it cleanly from start to finish.
+            NorthForge was built around a simple idea: many manufacturing businesses do not need a big consultancy programme or a lone developer for hire. They need a focused software company that can understand a messy workflow, design a better system, and deliver it cleanly from start to finish.
           </p>
         </div>
       </SectionWrapper>
@@ -123,7 +124,7 @@ export default function HomePage() {
           </Card>
           <Card title="Start with a clear first step">
             <p>
-              Most new engagements begin with our Manufacturing Workflow Sprint: one focused project to replace one bottleneck with a practical tool, dashboard, automation, integration, or selective AI-assisted process improvement.
+              Most new engagements begin with our Manufacturing Workflow Sprint: one focused project to replace one bottleneck with a practical tool, dashboard, automation, integration, or selective AI-assisted process improvement delivered with direct senior involvement.
             </p>
             <div className="mt-4 flex flex-wrap gap-3">
               <Button href="/workflow-sprint" variant="primary">See the Workflow Sprint</Button>

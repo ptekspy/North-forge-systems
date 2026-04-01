@@ -21,17 +21,17 @@ export default function AboutPage() {
       />
       <SectionWrapper>
         <div className="grid gap-4 md:grid-cols-2">
-          <Card title="Founder-led systems building">
+          <Card title="Founder-led company, practical delivery">
             <p>
-              NorthForge Systems is led by Patrick Kenneally, a founder and systems builder with deep hands-on experience delivering software, internal tools, automation, and operational systems.
+              NorthForge Systems is a founder-led software and automation company led directly by Patrick Kenneally. He brings deep hands-on experience delivering internal tools, automation, dashboards, integrations, and operational systems.
             </p>
             <p>
-              The emphasis is straightforward: understand how work actually moves through a business, where friction and admin build up, and deliver better systems end to end.
+              The emphasis is straightforward: understand how work actually moves through a business, where friction and admin build up, and deliver better systems end to end with clear ownership and practical accountability.
             </p>
           </Card>
           <Card title="Built for manufacturing SMEs">
             <p>
-              We work with manufacturing businesses where spreadsheets, inboxes, and manual admin have become the default operating system.
+              NorthForge works with manufacturing businesses where spreadsheets, inboxes, and manual admin have become the default operating system.
             </p>
             <p>
               Based in Bradford, West Yorkshire, NorthForge is grounded in a region full of practical manufacturing businesses that need better workflow tools, stronger reporting, and clearer operational systems without unnecessary complexity.
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <h2 className="text-4xl md:text-5xl">How we work</h2>
             <div className="mt-6 max-w-3xl space-y-4 text-lg leading-8 text-[var(--color-muted)]">
               <p>
-                We keep delivery direct and commercial: clear scope, clear communication, and systems built around your day-to-day operations.
+                NorthForge combines founder-led direction with the delivery mindset of a focused software team: clear scope, direct communication, practical systems, and sensible handover.
               </p>
               <p>
                 The work is not about technology for its own sake. It is about improving process clarity, reducing admin, strengthening reporting, and building practical systems that real teams can use day to day.
@@ -63,7 +63,7 @@ export default function AboutPage() {
             <ul className="mt-4 space-y-3 text-[15px] leading-7 text-[var(--color-muted)]">
               <li className="flex gap-3">
                 <span aria-hidden className="mt-2 h-2 w-2 rounded-full bg-[var(--color-accent)]" />
-                <span>Founder-led work with direct communication throughout delivery.</span>
+                <span>Founder-led direction with direct senior involvement from Patrick Kenneally.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden className="mt-2 h-2 w-2 rounded-full bg-[var(--color-accent)]" />
@@ -71,7 +71,7 @@ export default function AboutPage() {
               </li>
               <li className="flex gap-3">
                 <span aria-hidden className="mt-2 h-2 w-2 rounded-full bg-[var(--color-accent)]" />
-                <span>Combines hands-on software delivery with workflow and operational systems thinking.</span>
+                <span>Delivery shaped like a focused software team: accountable, direct, and commercially grounded.</span>
               </li>
               <li className="flex gap-3">
                 <span aria-hidden className="mt-2 h-2 w-2 rounded-full bg-[var(--color-accent)]" />

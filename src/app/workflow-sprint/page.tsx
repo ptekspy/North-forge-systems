@@ -41,7 +41,7 @@ export default function WorkflowSprintPage() {
       <SectionWrapper>
         <div className="grid gap-4 md:grid-cols-2">
           <Card title="What it is">
-            <p>One focused, commercially scoped project delivered with clear outcomes, direct communication, and a sensible fixed scope.</p>
+            <p>One focused, fixed-scope engagement delivered with clear outcomes, direct senior involvement, and the delivery discipline of a specialist software company.</p>
           </Card>
           <Card title="Who it is for">
             <p>Manufacturing teams running critical workflows through spreadsheets, manual updates, disconnected tools, or repetitive admin that no longer scales cleanly.</p>
@@ -65,7 +65,7 @@ export default function WorkflowSprintPage() {
         <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">Why start here</p>
           <p className="mt-3 max-w-4xl text-[15px] leading-7 text-[var(--color-muted)]">
-            The Workflow Sprint is designed as a sensible first step: one operational problem, one clear scope, and one practical improvement without turning the first engagement into a large open-ended project.
+            The Workflow Sprint is designed as a sensible first step: one operational problem, one clear scope, and one practical improvement without turning the first engagement into a large open-ended project. It is the clearest way to test fit with NorthForge while keeping risk, scope, and communication under control.
           </p>
         </div>
       </SectionWrapper>

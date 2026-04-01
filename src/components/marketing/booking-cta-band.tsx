@@ -9,7 +9,7 @@ export function BookingCtaBand() {
         <div className="max-w-2xl">
           <h2 className="font-heading text-3xl">Ready to remove one operational bottleneck?</h2>
           <p className="mt-3 text-[15px] leading-7 text-slate-200">
-            Book a practical, no-fluff discovery call to map your next workflow improvement.
+            Book a practical, no-fluff discovery call with NorthForge to map your next workflow improvement and identify the right first step.
           </p>
         </div>
         <Button href={siteConfig.calendlyUrl} variant="secondary" className="w-full sm:w-auto">
