@@ -15,7 +15,11 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/90 bg-[var(--color-bg)]/94 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5 sm:px-6 md:px-10">
-        <Link href="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="flex items-center gap-3"
+          onClick={() => setOpen(false)}
+        >
           <Image
             src="/logos/northforge-systems-logo-icon.png"
             alt="NorthForge Systems logo icon"
@@ -35,6 +39,7 @@ export function Navbar() {
         </Link>
 
         <button
+          type="button"
           onClick={() => setOpen((value) => !value)}
           className="rounded-lg border border-slate-300 bg-white px-3.5 py-2 text-sm font-medium text-[var(--color-primary)] shadow-sm md:hidden"
           aria-expanded={open}
@@ -58,7 +63,11 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button href={siteConfig.calendlyUrl} variant="secondary" className="ml-3">
+          <Button
+            href={siteConfig.calendlyUrl}
+            variant="secondary"
+            className="ml-3"
+          >
             Book a Call
           </Button>
         </nav>
@@ -81,7 +90,11 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button href={siteConfig.calendlyUrl} variant="secondary" className="mt-2 w-full">
+          <Button
+            href={siteConfig.calendlyUrl}
+            variant="secondary"
+            className="mt-2 w-full"
+          >
             Book a Call
           </Button>
         </nav>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 
 type ButtonProps = {
   href: string;
@@ -17,7 +17,12 @@ const styles = {
     "border border-slate-300 bg-white text-[var(--color-primary)] hover:border-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-[var(--color-bg)]",
 };
 
-export function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {
+export function Button({
+  href,
+  children,
+  variant = "primary",
+  className = "",
+}: ButtonProps) {
   return (
     <Link
       href={href}

@@ -32,7 +32,9 @@ export function Footer() {
             <p className="mt-5 max-w-sm text-[15px] leading-7 text-slate-300">
               Founder-led software and automation for manufacturing SMEs.
             </p>
-            <p className="mt-2 text-[15px] text-slate-300">Bradford, West Yorkshire</p>
+            <p className="mt-2 text-[15px] text-slate-300">
+              Bradford, West Yorkshire
+            </p>
           </div>
 
           <div>
@@ -40,13 +42,19 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm text-slate-300">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="transition-colors hover:text-white">
+                  <Link
+                    href={link.href}
+                    className="transition-colors hover:text-white"
+                  >
                     {link.label}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/privacy" className="transition-colors hover:text-white">
+                <Link
+                  href="/privacy"
+                  className="transition-colors hover:text-white"
+                >
                   Privacy Policy
                 </Link>
               </li>
@@ -57,17 +65,26 @@ export function Footer() {
             <h2 className="font-heading text-xl">Get Started</h2>
             <ul className="mt-4 space-y-2.5 text-sm text-slate-300">
               <li>
-                <Link href={siteConfig.calendlyUrl} className="transition-colors hover:text-white">
+                <Link
+                  href={siteConfig.calendlyUrl}
+                  className="transition-colors hover:text-white"
+                >
                   Book a Discovery Call
                 </Link>
               </li>
               <li>
-                <Link href={`mailto:${siteConfig.email}`} className="transition-colors hover:text-white">
+                <Link
+                  href={`mailto:${siteConfig.email}`}
+                  className="transition-colors hover:text-white"
+                >
                   {siteConfig.email}
                 </Link>
               </li>
               <li>
-                <Link href="/workflow-sprint" className="transition-colors hover:text-white">
+                <Link
+                  href="/workflow-sprint"
+                  className="transition-colors hover:text-white"
+                >
                   Manufacturing Workflow Sprint
                 </Link>
               </li>
@@ -76,7 +93,10 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col gap-2 border-t border-white/10 pt-5 text-xs text-slate-300 md:flex-row md:items-center md:justify-between">
-          <p>© {year} NorthForge Systems. Practical software and automation for manufacturing operations.</p>
+          <p>
+            © {year} NorthForge Systems. Practical software and automation for
+            manufacturing operations.
+          </p>
           <p>Privacy-first enquiries and direct founder-led delivery.</p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/marketing/page-hero";
 import { Button } from "@/components/ui/button";
@@ -8,7 +8,8 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Book a discovery call to discuss manufacturing workflow problems, internal tools, automation, dashboards, integrations, and selective AI-assisted improvements.",
+  description:
+    "Book a discovery call to discuss manufacturing workflow problems, internal tools, automation, dashboards, integrations, and selective AI-assisted improvements.",
   alternates: { canonical: "/contact" },
 };
 
@@ -19,30 +20,51 @@ export default function ContactPage() {
         title="Contact"
         summary="If you are dealing with spreadsheet chaos, reporting friction, or admin-heavy operational workflows, let's talk."
       >
-        <Button href={siteConfig.calendlyUrl} variant="secondary">Book a Discovery Call</Button>
+        <Button href={siteConfig.calendlyUrl} variant="secondary">
+          Book a Discovery Call
+        </Button>
       </PageHero>
       <SectionWrapper>
         <p className="max-w-2xl text-lg leading-8 text-[var(--color-muted)]">
-          The clearest next step is usually a short discovery call with NorthForge. This is most relevant for owners, operations managers, production managers, commercial leads, and admin teams dealing with workflow friction inside a manufacturing business.
+          The clearest next step is usually a short discovery call with
+          NorthForge. This is most relevant for owners, operations managers,
+          production managers, commercial leads, and admin teams dealing with
+          workflow friction inside a manufacturing business.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           <Card title="Book directly via Calendly">
             <p>The fastest route is to book a discovery call directly.</p>
-            <div className="mt-3"><Button href={siteConfig.calendlyUrl} variant="secondary">Open Calendly</Button></div>
+            <div className="mt-3">
+              <Button href={siteConfig.calendlyUrl} variant="secondary">
+                Open Calendly
+              </Button>
+            </div>
           </Card>
           <Card title="Prefer email?">
-            <p>If you want to share context first, email NorthForge and we will come back with suitable next steps.</p>
+            <p>
+              If you want to share context first, email NorthForge and we will
+              come back with suitable next steps.
+            </p>
             <p className="mt-3">
-              <Link href={`mailto:${siteConfig.email}`} className="font-semibold text-[var(--color-primary)] underline">
+              <Link
+                href={`mailto:${siteConfig.email}`}
+                className="font-semibold text-[var(--color-primary)] underline"
+              >
                 {siteConfig.email}
               </Link>
             </p>
           </Card>
         </div>
         <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">Before we speak</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[var(--color-accent-strong)]">
+            Before we speak
+          </p>
           <p className="mt-3 max-w-3xl text-[15px] leading-7 text-[var(--color-muted)]">
-            A brief note about the workflow, the teams involved, and where the current friction shows up is enough to make the first conversation useful. Typical projects involve internal tools, workflow automation, dashboards, integrations, and sometimes AI-assisted workflow improvements where they genuinely reduce admin.
+            A brief note about the workflow, the teams involved, and where the
+            current friction shows up is enough to make the first conversation
+            useful. Typical projects involve internal tools, workflow
+            automation, dashboards, integrations, and sometimes AI-assisted
+            workflow improvements where they genuinely reduce admin.
           </p>
         </div>
       </SectionWrapper>
