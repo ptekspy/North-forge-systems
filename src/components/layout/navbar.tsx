@@ -13,8 +13,9 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-[var(--color-bg)]/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10">
-        <Link href="/" className="flex items-center">
-          <Image src="/logos/northforge-logo-light.svg" alt="NorthForge Systems logo" width={170} height={44} />
+        <Link href="/" className="flex items-center gap-4">
+          <Image src="/logos/northforge-systems-logo-icon.png" alt="NorthForge Systems logo icon" width={52} height={44} />
+          <Image src="/logos/northforge-systems-logo-text.png" alt="NorthForge Systems logo text" className="hidden lg:block" width={252} height={44} />
         </Link>
         <button
           onClick={() => setOpen((value) => !value)}
