@@ -6,6 +6,7 @@ type ButtonProps = {
   children: ReactNode;
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
+  isLink?: boolean;
 };
 
 const styles = {
@@ -22,13 +23,18 @@ export function Button({
   children,
   variant = "primary",
   className = "",
+  isLink = false
 }: ButtonProps) {
-  return (
-    <Link
-      href={href}
-      className={`inline-flex min-h-11 items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold tracking-[0.01em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 ${styles[variant]} ${className}`}
-    >
-      {children}
-    </Link>
-  );
+    if (isLink) {
+      return (
+        <Link
+          href={href}
+          className={`inline-flex min-h-11 items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold tracking-[0.01em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 ${styles[variant]} ${className}`}
+        >
+          {children}
+        </Link>
+      );
+    }
+
+  return null
 }
